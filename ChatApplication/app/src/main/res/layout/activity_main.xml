@@ -9,7 +9,8 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="69dp"
+        android:layout_height="55dp"
+        android:background="#000000"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,16 +21,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.1"
+            android:background="#000000"
             android:ems="10"
             android:hint="enter a message"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:padding="2dp"
+            android:shadowRadius="20"
+            android:textColor="#F8F8F8" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Send"
+            android:padding="2dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text=">"
+            app:backgroundTint="@color/purple_500"
             app:cornerRadius="10dp" />
     </LinearLayout>
 
@@ -49,7 +60,7 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:ems="10"

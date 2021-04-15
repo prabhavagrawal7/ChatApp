@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 //        senior.setOnClickListener(new View.OnClickListener() {
 //            @
 //            public void onClick(View v) {
-//              soj="senior: ";
+//              soj="Senior: ";
 //
 //                junior.setVisibility(View.INVISIBLE);
 //                senior.setVisibility(View.INVISIBLE);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 //        junior.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                soj="junior: ";
+//                soj="Junior: ";
 //                junior.setVisibility(View.INVISIBLE);
 //                senior.setVisibility(View.INVISIBLE);
 //                junior.setClickable(false);
@@ -82,8 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String s = snapshot.getValue().toString();
-                String seniorjunior = s.substring(0, 6);
-                s = s.substring(6, s.length());
+
             // show.setText(databaseReference.child(name).get().toString());
 
               show.setText("\n"+show.getText()+s+"\n");

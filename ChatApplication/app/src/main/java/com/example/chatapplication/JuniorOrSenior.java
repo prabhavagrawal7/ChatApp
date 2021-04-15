@@ -29,14 +29,14 @@ public class JuniorOrSenior extends AppCompatActivity {
         senior.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 so="senior: ";
+                 so="Doubt:- ";
                 openActivity(v);
             }
         });
         junior.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                so="junior: ";
+                so="Doubt Solver:- ";
                 openActivity(v);
             }
         });
