@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
          soj=intent.getStringExtra(JuniorOrSenior.Extra_Name);
 
 //        senior.setOnClickListener(new View.OnClickListener() {
-//            @Override
+//            @
 //            public void onClick(View v) {
 //              soj="senior: ";
 //
@@ -82,9 +82,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String s = snapshot.getValue().toString();
+                String seniorjunior = s.substring(0, 6);
+                s = s.substring(6, s.length());
             // show.setText(databaseReference.child(name).get().toString());
 
-              show.setText(s+"\n"+show.getText()+"\n\n");
+              show.setText("\n"+show.getText()+s+"\n");
 
 //
             }
