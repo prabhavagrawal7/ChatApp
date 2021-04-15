@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,11 +24,12 @@
             android:layout_weight="0.1"
             android:background="#000000"
             android:ems="10"
-            android:hint="enter a message"
+            android:hint="Enter Message Here"
             android:inputType="textPersonName"
-            android:padding="2dp"
+            android:paddingLeft="10dp"
             android:shadowRadius="20"
-            android:textColor="#F8F8F8" />
+            android:textColor="#F8F8F8"
+            android:textColorHint="#FFFFFF" />
 
         <Button
             android:id="@+id/button"
@@ -65,8 +67,11 @@
             android:layout_gravity="bottom"
             android:ems="10"
             android:gravity="top"
-            android:hint="messages will appear here"
-            android:inputType="none" />
+            android:hint="Start your chat here !"
+            android:inputType="none"
+            android:textColor="#FBFBFB"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#B2CFCF" />
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
